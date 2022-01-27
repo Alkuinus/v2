@@ -1,0 +1,121 @@
+:root { /* o root cria um comando raíz, pra poder usar e configurar outras propriedades sem ter que codigar novamente */
+  --ur--color: white;
+}
+
+/* general content */
+
+html,body {
+  margin:0;
+  padding:0;
+  height: 100%;
+}
+
+.allbutfooter {
+    min-height: calc(100vh - 120px);
+}
+
+html {
+  background-image: url(background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+body {
+  display:flex;
+  flex-direction:column;
+  color: var(--ur--color);
+  font-family: 'Roboto', sans-serif;
+}
+
+.container { /*.container usado para poder configurar os boxes de forma padrão, sem ocupar muito código */
+  margin: auto;
+  width: auto;
+  text-align: center;
+  max-height: 100%;
+}
+
+a, abbr {
+  color: var(--ur--color);
+  text-decoration: none;
+}
+
+table, th, td {
+  text-align: center;
+  margin: auto;
+  width: 1400px;
+  border-collapse: separate;
+  border-spacing: 25px;
+}
+
+th {
+  padding-bottom: 25px;
+  font-size: 33px;
+}
+
+td, p, label, a {
+  font-size: 21px;
+}
+
+h2, h3, h4, h5, h6 {
+  font-size: 33px;
+  font-family: 'Bree Serif', serif;
+  color: gold;
+  font-weight: normal;
+  text-align: center;
+}
+
+hr {
+  border-top: 8px dotted;
+  border-left: none;
+  border-bottom: none;
+  border-right: none;
+  color: #FABB51;
+  background: transparent;
+  width: 55px;
+}
+
+/* footer content */
+
+footer img {
+  width: 40px;
+  height: 40px;
+}
+
+footer {
+    text-align: center;
+    height: 120px;
+    margin: auto;
+}
+
+/* home content */
+
+.myname .container { /*.container identificado e especificado para o que preciso estilizar neste container único, mas ainda usando as bases do geral, sem ter que codificar */
+  max-height: 100%;
+  font-family: 'Bilbo', cursive;
+  font-size: 89px;
+  color: gold;
+  letter-spacing: 5px;
+  position: relative;
+  top: 10px;
+}
+
+.myname p {
+  position: relative;
+  bottom: 120px;
+  letter-spacing: normal;
+  font-size: 34px;
+}
+
+/* bio content */
+
+.bio .container {
+  margin: auto;
+  position: relative;
+  top: 75px;
+  width: 75%;
+}
+
+.bio .container img {
+  width: 15%;
+  border-radius: 100%;
+}

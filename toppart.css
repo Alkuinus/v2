@@ -1,0 +1,37 @@
+nav {
+  flex: auto;
+  width: auto;
+  margin: auto;
+  padding: 10px;
+}
+
+nav.menu ul {
+  /* usando o nav.menu ul, ou simplesmente nav ul, posso editar sem que criar várias divisões só pra estilizar. Isso facilita muito. */
+  display: flex;
+  /* esse atributo criou o container, pra poder estilizar os itens de uma vez só e organizá-los*/
+  justify-content: center;
+  /*este atributo dividiu o espaço do container entre os itens */
+  width: auto;
+  margin: auto;
+  padding-left: 0;
+  /* este atributo foi usado para alinhar os links do menu */
+  list-style-type: none;
+  /* usado pra esconder o ponto de cada item da lista */
+  text-align: center;
+  overflow: hidden;
+}
+
+nav.menu li a {
+  /* aqui, os itens foram colocados em linha de modo flexível, permitindo maior customização */
+  color: #FFFDDE;
+  padding: 75px;
+  text-decoration: none;
+  font-size: 21px;
+  font-family: 'Bree Serif', serif;
+}
+
+nav.menu a:hover {
+  /* esse atributo é o de passar o mouse por cima e mudar de cor */
+  background-color: #FFEEAD;
+  font-style: italic;
+}

@@ -1,0 +1,38 @@
+
+.books .container {
+  width: 75%;
+  text-align: justify;
+  line-height: 1.5;
+  margin: 0 auto;
+}
+
+.books img {
+  width: 200px;
+  border-radius: 10%;
+}
+
+.books .berserk {
+  position: relative;
+  top: 30px;
+}
+
+.books .book-content-odd, .book-content-even  {
+  margin: 150px 0;
+  width: 100%;
+  height: 250px;
+}
+
+.books .book-content-odd img {
+  float: left;
+}
+
+.books .book-content-even img {
+  float: right;
+}
+
+.books .book-content-odd p, h2 {
+  margin-left: 20%;
+}
+
+.books .book-content-even p, h2 {
+  margin-right: 20%;
